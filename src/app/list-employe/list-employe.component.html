@@ -1,0 +1,35 @@
+
+<h1>Ajouter Employer</h1>
+<form action="">
+    <div class="from-group">
+
+        <label for="">id</label> 
+        <input type="text" name="id" class="form-control" [(ngModel)]="employe.id">
+        <label for="">nom</label>    
+        <input type="text" name="nom"  class="form-control" [(ngModel)]="employe.nom">
+        <label for="">prenom</label>    
+        <input type="text" name="prenom" class="form-control" [(ngModel)]="employe.prenom">
+    </div>
+    <button type="submit" (click)="save()">{{val}}</button>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>action</th>
+        </tr>
+
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of listEmployes">
+            <td>{{e.id}}</td>
+            <td>{{e.nom}}</td>
+            <td>{{e.prenom}}</td>
+            <td><button (click)="deletEmp(e.id)">delete</button></td>
+            <button type="button" (click)="Modif(e.id)">Modif</button>
+
+        </tr>
+    </tbody>
+</table>

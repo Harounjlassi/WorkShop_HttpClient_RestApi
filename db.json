@@ -1,0 +1,28 @@
+{
+  "employes": [
+    {
+      "id": "22",
+      "nom": "haroun",
+      "prenom": "jlassi"
+    },
+    {
+      "id": "22",
+      "nom": "kk",
+      "prenom": "kk"
+    }
+  ],
+  "deps": [
+    {
+      "id": "1",
+      "name": "dep1"
+    },
+    {
+      "id": "2",
+      "name": "dep2"
+    },
+    {
+      "id": "3",
+      "name": "dep3"
+    }
+  ]
+}
